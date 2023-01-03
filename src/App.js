@@ -9,14 +9,14 @@ import { useDispatch } from 'react-redux';
 import { window } from './redux/slices/basketSlice';
 
 function App() {
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
   React.useEffect(() => {
     document.body.addEventListener('click', () => {
-      dispatch(window())
-    })
-  }, [])
+      dispatch(window());
+    });
+  }, []);
 
-  return ( 
+  return (
     <div className="wrapper">
       <Header />
       <div className="content">
